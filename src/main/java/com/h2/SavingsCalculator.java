@@ -23,7 +23,7 @@ public class SavingsCalculator {
         SavingsCalculator savingsCalculator = new SavingsCalculator(credits, debits);
         float netSavings = savingsCalculator.calculate();
         System.out.println(
-            "Net savings = " + netSavings + ", remaining days in month = " + remainingDaysInMonth(LocalDate.now()));
+            "Net Savings = " + netSavings + ", remaining days in month = " + remainingDaysInMonth(LocalDate.now()));
     }
 
     public float calculate() {
