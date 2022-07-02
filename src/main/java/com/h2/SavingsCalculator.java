@@ -59,7 +59,7 @@ public class SavingsCalculator {
 
         int i = 0;
         for (String item : items) {
-            parsedItems[i] = Float.parseFloat(item);
+            parsedItems[i] = Utilities.getFloatValue(item);
             i++;
         }
 
