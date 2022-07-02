@@ -1,10 +1,7 @@
 package com.h2;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.YearMonth;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SavingsCalculator {
 
@@ -47,9 +44,7 @@ public class SavingsCalculator {
         YearMonth yearMonth = YearMonth.of(date.getYear(), date.getMonth());
         int totalDaysInMonth = yearMonth.lengthOfMonth();
 
-        int remainingDays = totalDaysInMonth - date.getDayOfMonth();
-
-        return remainingDays;
+        return totalDaysInMonth - date.getDayOfMonth();
     }
 
     private float adder(float[] nums) {
